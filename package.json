@@ -10,7 +10,7 @@
     "client": "cd client && npm start",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "setup":"npm install && cd client && npm install",
-    "build":""
+    "build":"cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
