@@ -8,6 +8,7 @@ module.exports = (passport) => {
     secretOrKey: keys.secretKey,
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
   };
+  
   passport.use(
     new JwtStrategy(options, (jwt_payload, done) => {
       Auth.findById(jwt_payload.id)
