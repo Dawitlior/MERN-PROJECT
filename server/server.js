@@ -9,14 +9,24 @@ const port = 8080;
 const DB = require("./DB");
 /**---------------------------------- */
 
+const OrderRouter = require("./routes/order-route");
+const ProductRouter = require('./routes/product-route');
+const StoresRouter = require('./routes/stores-router');
+const DepartmentRouter = require('./routes/department-route');
+
+
+/**-------------------------------------------- */
 app.use(cors());
 app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 
+/**------------------------------ */
+app.use("/orders", OrderRouter);
+app.use("/products", ProductRouter);
+app.use("/stores",StoresRouter);
+app.use("/departments",DepartmentRouter);
 
-
-
-
+/**------------------------------ */
 app.get("/", (request, response) => {
   return response.send({ success: true, message: "welcome to my site" });
 });
@@ -27,12 +37,12 @@ app.listen(port, () => {
 
 /**-------------------------------------------------------- */
 
-if(process.env.NODE_ENV === 'production'){
+if (process.env.NODE_ENV === "production") {
   /**save static files */
-  app.use(express.static(path.join(__dirname,'../client/build')));
-  app.get("*",(request,response)=>{
-    response.sendFile(path.join(__dirname,'../client/build','index.html'))
-  })
+  app.use(express.static(path.join(__dirname, "../client/build")));
+  app.get("*", (request, response) => {
+    response.sendFile(path.join(__dirname, "../client/build", "index.html"));
+  });
 }
 
 /**-------------------------------------------------------- */

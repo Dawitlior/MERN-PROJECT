@@ -1,11 +1,39 @@
-GET http://localhost:8080/
+GET http://localhost:8080/stores
 
 ###
 
-POST http://localhost:8080/users/saveData
+GET http://localhost:8080/product/6388de783963f059fca6a440
+
+
+
+###
+# POST http://localhost:8080/orders/saveOrder
+
+
+# Content-Type:  application/json
+# {"order":{
+#     "numberOrder":12,
+#     "name":"shoes",
+#     "address":"tel-aviv 12",
+#     "deliveryTime":"12/2/20 12:53",
+#     "numberProduct":1,
+#     "price":233}
+# }
+
+###
+DELETE http://localhost:8080/product/delete/6388de783963f059fca6a440
+
+
+###
+
+PUT  http://localhost:8080/product/6388de783963f059fca6a440
 
 Content-Type: application/json
 {
-    "id":1,
-    "name":"lior"
+    "numberOrder":12,
+    "name":"shoes",
+    "address":"tel-aviv 12",
+    "deliveryTime":"12/2/20 12:53",
+    "numberProduct":1,
+    "price":233
 }
