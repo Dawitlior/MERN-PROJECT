@@ -8,11 +8,12 @@ const getDepartment = async (request, response) => {
     if (departments.length == 0) {
       return response
         .status(300)
-        .json({ success: true, message: "Sorry, there is no departments available" });
+        .json({
+          success: true,
+          message: "Sorry, there is no departments available",
+        });
     }
-    response
-      .status(200)
-      .json({ success: true, message: departments.length && departments });
+    response.status(200).json({ success: true, message: departments.length });
   });
 };
 

@@ -1,4 +1,3 @@
-
 const OrderModel = require("../models/order-model");
 
 const getOrders = async (request, response) => {
@@ -11,7 +10,7 @@ const getOrders = async (request, response) => {
         .status(300)
         .json({ success: false, message: "no Orders available" });
     }
-    response.status(200).json({ success: true,message:orders.length });
+    response.status(200).json({ success: true, message: orders.length });
   });
 };
 

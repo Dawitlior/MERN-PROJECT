@@ -10,10 +10,11 @@ const DB = require("./DB");
 /**---------------------------------- */
 
 const OrderRouter = require("./routes/order-route");
-const ProductRouter = require('./routes/product-route');
-const StoresRouter = require('./routes/stores-router');
-const DepartmentRouter = require('./routes/department-route');
-
+const ProductRouter = require("./routes/product-route");
+const StoresRouter = require("./routes/stores-router");
+const DepartmentRouter = require("./routes/department-route");
+const InformationPageRouter = require("./routes/information-page-router");
+const CategoriesRouter = require("./routes/category-router");
 
 /**-------------------------------------------- */
 app.use(cors());
@@ -23,8 +24,10 @@ app.use(express.urlencoded({ extended: true }));
 /**------------------------------ */
 app.use("/orders", OrderRouter);
 app.use("/products", ProductRouter);
-app.use("/stores",StoresRouter);
-app.use("/departments",DepartmentRouter);
+app.use("/stores", StoresRouter);
+app.use("/departments", DepartmentRouter);
+app.use("/informationPages", InformationPageRouter);
+app.use("/categories", CategoriesRouter);
 
 /**------------------------------ */
 app.get("/", (request, response) => {

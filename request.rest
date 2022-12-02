@@ -1,27 +1,24 @@
-GET http://localhost:8080/stores
+GET http://localhost:8080/informationPages
 
 ###
 
-GET http://localhost:8080/product/6388de783963f059fca6a440
+GET http://localhost:8080/categories/638a26b7603daa5e9d01c4fd
 
 
 
 ###
-# POST http://localhost:8080/orders/saveOrder
+POST http://localhost:8080/informationPages/saveInformationPage
 
 
-# Content-Type:  application/json
-# {"order":{
-#     "numberOrder":12,
-#     "name":"shoes",
-#     "address":"tel-aviv 12",
-#     "deliveryTime":"12/2/20 12:53",
-#     "numberProduct":1,
-#     "price":233}
-# }
+Content-Type:  application/json
+{"informationPage":{
+    "numberOfPages":242,
+    
+    }
+}
 
 ###
-DELETE http://localhost:8080/product/delete/6388de783963f059fca6a440
+DELETE http://localhost:8080/informationPages/deleteInformationPage/638a15cd9c653fa974f6d2e2
 
 
 ###

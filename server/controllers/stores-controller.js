@@ -1,8 +1,7 @@
-const StoresModel = require('../models/stores-model');
+const StoresModel = require("../models/stores-model");
 
 const getStore = async (request, response) => {
-  await StoresModel.find({})
-  .then((store, error) => {
+  await StoresModel.find({}).then((store, error) => {
     if (error) {
       return response.status(400).json({ success: false, error });
     }
@@ -61,7 +60,9 @@ const deleteStoreById = async (request, response) => {
         .status(299)
         .json({ success: true, message: "Store delete Successfully" })
     )
-    .catch((error) => response.status(400).json({ success: false, message:error.message }));
+    .catch((error) =>
+      response.status(400).json({ success: false, message: error.message })
+    );
 };
 
 module.exports = {
@@ -69,5 +70,5 @@ module.exports = {
   getStoreById,
   createStore,
   updateStoreById,
-  deleteStoreById
+  deleteStoreById,
 };
