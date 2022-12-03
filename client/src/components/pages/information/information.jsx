@@ -6,13 +6,15 @@ import { BiCategoryAlt } from "react-icons/bi";
 const InformationPage = () => {
     const { informationPageData } = useContext(dataContext);
     return (
-        <Container>
-            <div className="department container-fluid">
+        <Container className="InformationPage">
+            <span className="informationPage-span">
+                דפי מידע
+            </span>
+            <div className=" container-fluid">
                 <div className="iconAndNumber pt-3 d-flex">
-                    דפי מידע
                     <h3 id="number" className="text-center">{informationPageData.length}</h3>
-                    <BiCategoryAlt size={30} />
                 </div>
+                <BiCategoryAlt size={30} />
             </div>
         </Container>
     );
