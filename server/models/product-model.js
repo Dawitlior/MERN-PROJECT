@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const Product = new Schema(
   {
     numberOfProduct: { type: Number, require: true },
+    year: { type: Number, require: true },
   },
   { timestamps: true }
 );

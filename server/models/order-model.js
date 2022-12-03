@@ -10,6 +10,7 @@ const Orders = new Schema(
     numberProduct: { type: Number, require: true },
     price: { type: Number, require: true },
     previousOrder: { type: Number },
+    year: { type: Number, require: true },
   },
   {
     timestamps: true,

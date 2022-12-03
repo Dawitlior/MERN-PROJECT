@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const Department = new Schema(
   {
     numberOfDepartment: { type: Number, require: true },
+    year: { type: Number, require: true },
   },
   {
     timestamps: true,

@@ -10,9 +10,7 @@ const getCategories = async (request, response) => {
         .status(299)
         .json({ success: true, message: "There is no categories available" });
     }
-    response
-      .status(200)
-      .json({ success: true, message: categories.length && categories });
+    response.status(200).json({success:true,categories});
   });
 };
 

@@ -13,7 +13,7 @@ const getDepartment = async (request, response) => {
           message: "Sorry, there is no departments available",
         });
     }
-    response.status(200).json({ success: true, message: departments.length });
+    response.status(200).json({success:true,departments});
   });
 };
 

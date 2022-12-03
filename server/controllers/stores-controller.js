@@ -10,7 +10,7 @@ const getStore = async (request, response) => {
         .status(300)
         .json({ success: false, message: "no Stores available" });
     }
-    response.status(200).json({ success: true, message: store.length });
+    response.status(200).json({success:true,store});
   });
 };
 

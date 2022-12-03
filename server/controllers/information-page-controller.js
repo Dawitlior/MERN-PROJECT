@@ -1,7 +1,8 @@
 const InformationPageModel = require("../models/information-page-model");
 
 const getInformationPages = async (request, response) => {
-  await InformationPageModel.find({}).then((infoPages, error) => {
+  await InformationPageModel.find({})
+  .then((infoPages, error) => {
     if (error) {
       return response.status(400).json({ success: false, message: error });
     }
@@ -11,7 +12,7 @@ const getInformationPages = async (request, response) => {
         message: "Sorry, There is no information pages available",
       });
     }
-    response.status(200).json({ success: true, message: infoPages.length });
+    response.status(200).json({success:true,infoPages});
   });
 };
 

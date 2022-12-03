@@ -1,4 +1,4 @@
-GET http://localhost:8080/informationPages
+GET http://localhost:8080/products
 
 ###
 
@@ -11,11 +11,8 @@ POST http://localhost:8080/informationPages/saveInformationPage
 
 
 Content-Type:  application/json
-{"informationPage":{
-    "numberOfPages":242,
-    
-    }
-}
+
+
 
 ###
 DELETE http://localhost:8080/informationPages/deleteInformationPage/638a15cd9c653fa974f6d2e2
