@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import Container from "react-bootstrap/esm/Container";
-import { dataContext } from '../../../contexts/allData.context'
-import { BiCategoryAlt } from "react-icons/bi";
+import { dataContext } from '../../../contexts/allData.context';
+import { IconName, IoIosAlbums } from "react-icons/io";
+import './information.css';
+
 
 const InformationPage = () => {
     const { informationPageData } = useContext(dataContext);
@@ -11,10 +13,10 @@ const InformationPage = () => {
                 דפי מידע
             </span>
             <div className=" container-fluid">
-                <div className="iconAndNumber pt-3 d-flex">
+                <div className="iconAndNumber pt-3">
                     <h3 id="number" className="text-center">{informationPageData.length}</h3>
                 </div>
-                <BiCategoryAlt size={30} />
+                <IoIosAlbums size={30} />
             </div>
         </Container>
     );

@@ -1,3 +1,4 @@
 .tableDiv{
-    width: 15vw;
+    width: 100vw;
+    /* max-width: fit-content; */
 }

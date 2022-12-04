@@ -7,7 +7,8 @@ import "./orderTable.css"
 ChartJs.register(CategoryScale, LinearScale, LineController, LineElement, PointElement, BarElement, Title, Tooltip, Legend)
 
 function OrderTable() {
-  const { ordersData, } = useContext(dataContext)
+  const { ordersData, } = useContext(dataContext);
+  
   const [chartData, setChartData] = useState({
     datasets: []
   });
@@ -40,10 +41,10 @@ function OrderTable() {
 
   }, [ordersData])
   return (
-    <div className='tableDiv'>
+    <Container className='tableDiv'>
       <br />
       <Line options={chartOptions} data={chartData} />
-    </div>
+    </Container>
   )
 }
 

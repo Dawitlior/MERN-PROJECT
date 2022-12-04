@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import Container from "react-bootstrap/esm/Container";
 import { dataContext } from '../../../contexts/allData.context'
-import { BiCategoryAlt } from "react-icons/bi";
-
+import { IoIosWalk } from "react-icons/io";
+import './department.css'
+//
 const Departments = () => {
     const { departmentDate } = useContext(dataContext);
     return (
@@ -11,10 +12,10 @@ const Departments = () => {
                 מחלקות
             </span>
             <div className="container-fluid">
-                <div className="iconAndNumber pt-3 d-flex">
+                <div className="iconAndNumber pt-3">
                     <h3 id="number" className="text-center">{departmentDate.length}</h3>
                 </div>
-                    <BiCategoryAlt size={30} />
+                <IoIosWalk size={30} />
             </div>
         </Container>
     );

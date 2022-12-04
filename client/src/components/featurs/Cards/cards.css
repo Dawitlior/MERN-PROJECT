@@ -1,4 +1,18 @@
-.chart{
+.cards-div{
     background-color: white;
-    width: 15vw;
+    width: 100vw;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+  @media screen and (max-width: 600px){
+.cards-div {
+        background-color: white;
+        /* width: 15vw; */
+        /* display: flex; */
+        justify-content: space-evenly;
+        align-items: center;
+    }
+} 

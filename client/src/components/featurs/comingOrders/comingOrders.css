@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    text-align: start;
+}
+
+table>tbody>tr:nth-child(even) {
+    background-color: hsl(0, 9%, 96%);
+
+}
+
+@media screen and (max-width:765px) {
+    table {
+        max-width: fit-content;
+    }
+
+}

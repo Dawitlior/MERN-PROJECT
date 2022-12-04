@@ -17,22 +17,24 @@ const DataProvider = ({ children }) => {
     const [storesData, setStoresData] = useState([])
 
     useEffect(() => {
-        getProducts().then((res) => setProductData( res.product ))
-        getDepartments().then((res) => setDepartmentData( res.departments ))
-        getCategories().then((res) => setCategoriesData( res.categories ))
-        getOrders().then((res) => setOrdersData( res.orders ))
-        getInformationPages().then((res) => setInformationPageData( res.infoPages ))
-        getStores().then((res) => setStoresData( res.store ))
+        getProducts().then((res) => setProductData(res.product))
+        getDepartments().then((res) => setDepartmentData(res.departments))
+        getCategories().then((res) => setCategoriesData(res.categories))
+        getOrders().then((res) => setOrdersData(res.orders))
+        getInformationPages().then((res) => setInformationPageData(res.infoPages))
+        getStores().then((res) => setStoresData(res.store))
 
     }, [])
 
     return (
-        <dataContext.Provider value={{ productData, setProductData,
-         departmentDate, setDepartmentData,
-          categoriesData, setCategoriesData,
-           ordersData, setOrdersData,
+        <dataContext.Provider value={{
+            productData, setProductData,
+            departmentDate, setDepartmentData,
+            categoriesData, setCategoriesData,
+            ordersData, setOrdersData,
             informationPageData, setInformationPageData,
-             storesData, setStoresData }}>
+            storesData, setStoresData
+        }}>
 
             {children}
         </dataContext.Provider>
