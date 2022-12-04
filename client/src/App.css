@@ -3,8 +3,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  /* background-color:#d1e1f8; */
-   background-color: hwb(206 92% 5%)
+   background-color: rgb(232 227 227)
 }
 .App-logo {
   height: 40vmin;

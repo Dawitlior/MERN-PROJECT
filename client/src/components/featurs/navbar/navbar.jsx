@@ -1,17 +1,16 @@
 import React from 'react'
 import './navbar.css'
-import { Container,Navbar } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 function navbar() {
   return (
     <>
-      <br />
-      <Navbar bg="black">
+      <Navbar style={{ background: "#032B45" }}>
         <Container>
           <Navbar.Brand href="#home">
             <img
-              src="/logo.svg"
-              width="30"
-              height="30"
+              src="logo512.png"
+              width="50"
+              height="50"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
