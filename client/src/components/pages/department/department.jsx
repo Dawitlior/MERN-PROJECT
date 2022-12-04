@@ -8,7 +8,7 @@ const Departments = () => {
     const { departmentDate } = useContext(dataContext);
     return (
         <Container className="department">
-            <span className="department-span">
+            <span style={{ color: "black" }} className="department-span">
                 מחלקות
             </span>
             <div className="container-fluid">

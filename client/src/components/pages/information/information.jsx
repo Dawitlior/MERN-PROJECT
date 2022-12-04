@@ -9,7 +9,7 @@ const InformationPage = () => {
     const { informationPageData } = useContext(dataContext);
     return (
         <Container className="InformationPage">
-            <span className="informationPage-span">
+            <span style={{ color: "black" }} className="informationPage-span">
                 דפי מידע
             </span>
             <div className=" container-fluid">

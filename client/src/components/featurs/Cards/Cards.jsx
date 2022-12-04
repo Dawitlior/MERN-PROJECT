@@ -8,24 +8,22 @@ import Stores from '../../pages/stores/stores';
 import { Container } from "react-bootstrap";
 function Cards() {
     return (
-        <Container className='cards-div'  >
+        <Container className='cards-div'>
+            <div className="products">
             <Products />
-            <Departments />
+            </div>
+            <div className="categories">
             <Categories />
+            </div>
+            <div className="infoPages">
             <InformationPage />
+            </div>
+            <div className="stores">
             <Stores />
-        <Container className='chart'>
-
-            </Container>
-            {/* <div className='chart'>
             </div>
-            <div className='chart'>
-                
+            <div className="departments">
+                <Departments/>
             </div>
-            <div className='chart'>
-            </div>
-            <dir className='chart'>
-            </dir> */}
         </Container>
     )
 }

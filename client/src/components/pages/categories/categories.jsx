@@ -8,7 +8,7 @@ const Categories = () => {
     const { categoriesData } = useContext(dataContext);
     return (
         <Container className="categories">
-            <span className="categories-span">
+            <span style={{color:"black"}} className="categories-span">
                 קטגוריות
             </span>
             <div className="container-fluid">

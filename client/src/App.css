@@ -3,8 +3,9 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-   background-color: rgb(232 227 227)
-}
+   background-color: rgb(232 227 227);
+  };
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

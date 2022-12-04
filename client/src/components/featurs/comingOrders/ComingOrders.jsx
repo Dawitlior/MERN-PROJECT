@@ -7,7 +7,7 @@ function ComingOrders() {
   const { ordersData } = useContext(dataContext);
   return (
     <Container>
-      <Table>
+      <Table responsive>
         <thead>
           <th>מספר הזמנה</th>
           <th>שם</th>
@@ -18,9 +18,9 @@ function ComingOrders() {
         </thead>
 
         <tbody>
-          {ordersData.map((item) => {
+          {ordersData.map((item,key) => {
             return (
-              <tr>
+              <tr key={key}>
                 <td>{item.numberOrder}</td>
                 <td>{item.name}</td>
                 <td>{item.address}</td>

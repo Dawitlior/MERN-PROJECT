@@ -9,8 +9,8 @@ import './stores.css'
 const Stores = () => {
     const { storesData } = useContext(dataContext);
     return (
-        <Container className="store">
-            <span className="store-span">
+        <Container  className="store">
+            <span style={{ color: "black" }} className="store-span">
                 חנויות
             </span>
             <div className="container-fluid">

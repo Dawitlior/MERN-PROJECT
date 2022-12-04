@@ -45,7 +45,7 @@ const LastOrders = () => {
       </div>
 
       <div className="comingOrders">
-        <ComingOrders/>
+        <ComingOrders />
       </div>
     </Container>
   );
