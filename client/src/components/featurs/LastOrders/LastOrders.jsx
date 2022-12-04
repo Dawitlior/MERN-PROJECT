@@ -2,7 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { dataContext } from "../../../contexts/allData.context";
 import "./lastOrders.css";
-import { Table, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import ComingOrders from "../comingOrders/ComingOrders";
 
 const LastOrders = () => {
@@ -10,7 +10,6 @@ const LastOrders = () => {
   return (
     <Container className="showCaseContainer container-fluid mt-5 mb-5">
       <div className="ShowCase circleShowCase text-center">
-
         <div className=" one  text-center fs-5">
           משתמשים ב30 יום האחרונים
           <div className="inside">

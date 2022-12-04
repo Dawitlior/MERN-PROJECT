@@ -1,6 +1,6 @@
-import React from 'react'
-import './navbar.css'
-import { Container, Navbar } from 'react-bootstrap';
+import React from "react";
+import "./navbar.css";
+import { Container, Navbar } from "react-bootstrap";
 function navbar() {
   return (
     <>
@@ -18,7 +18,7 @@ function navbar() {
         </Container>
       </Navbar>
     </>
-  )
+  );
 }
 
 export default navbar;

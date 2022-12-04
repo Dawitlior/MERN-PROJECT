@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Container style={{ backgroundColor: "#ececec" }} className="App">
         <DataProvider>
-          <br/>
+          <br />
           <Cards />
           <OrderTable />
           <LastOrders />

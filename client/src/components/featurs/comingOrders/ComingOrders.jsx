@@ -1,7 +1,7 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import { Table, Container } from "react-bootstrap";
 import { dataContext } from "../../../contexts/allData.context";
-import './comingOrders.css';
+import "./comingOrders.css";
 
 function ComingOrders() {
   const { ordersData } = useContext(dataContext);
@@ -18,7 +18,7 @@ function ComingOrders() {
         </thead>
 
         <tbody>
-          {ordersData.map((item,key) => {
+          {ordersData.map((item, key) => {
             return (
               <tr key={key}>
                 <td>{item.numberOrder}</td>
