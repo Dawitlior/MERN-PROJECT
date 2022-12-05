@@ -9,12 +9,14 @@ function ComingOrders() {
     <Container>
       <Table responsive>
         <thead>
+          <tr>
           <th>מספר הזמנה</th>
           <th>שם</th>
           <th>כתובת</th>
           <th>מחיר</th>
           <th>הזמנות קודמות</th>
           <th>שנה</th>
+          </tr>
         </thead>
 
         <tbody>
